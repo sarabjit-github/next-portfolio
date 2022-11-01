@@ -1,0 +1,149 @@
+.header{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+}
+.header span{
+    color: var(--primary-color);
+}
+.line{
+    width: 40%;
+    height: 2px;
+    background: var(--primary-color);
+}
+.aboutSection > h3{
+    margin-top: 1rem;
+    color: var(--gray);
+}
+.aboutContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.left{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left div{
+    font-size: 1.125rem;
+    color: var(--gray);
+}
+.right{
+    position: relative;
+}
+.aboutImg{
+    max-height: 650px;
+    width: auto;
+    border-bottom: 2px solid var(--primary-color);
+}
+.pattren{
+    position: absolute;
+    top: 5rem;
+    left: .5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 4px);
+    grid-template-rows: repeat(5, 4px);
+    gap: 1.25rem;
+}
+.pattren span, .pattren2 span{
+    width: 4px;
+    height: 4px;
+    background: var(--gray);
+    border-radius: 50%;
+}
+.pattren2{
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 4px);
+    grid-template-rows: repeat(4, 4px);
+    gap: 1.5rem 2rem;
+}
+.funFacts{
+    position: relative;
+}
+.funFacts h1{
+    color: white;
+}
+.funFacts h1 span{
+    color: var(--primary-color);
+}
+.funFacts > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.factsWrapper{
+    margin-top: 2rem;
+    color: var(--gray);
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.factsWrapper div{
+    border: 1px solid;
+    padding: .5rem 1rem;
+    font-size: 1.125rem;
+}
+.factsWrapper div span{
+    color: white;
+}
+.pattrenWrapper{
+    /* position: absolute;
+    right: 10%;
+    top: 10%; */
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+}
+.pattren1{
+    display: grid;
+    grid-template-columns: repeat(4, 4px);
+    grid-template-rows: repeat(4, 4px);
+    gap: 1rem;
+    justify-self: flex-start;
+}
+.pattren1 span{
+    width: 4px;
+    height: 4px;
+    background: var(--gray);
+    border-radius: 4px;
+}
+.pattrenImg{
+    width: 150px;
+    height: auto;
+    justify-self: flex-end;
+    align-self: flex-end;
+    user-select: none;
+}
+
+@media (max-width:1024px) {
+    .aboutImg{
+        max-height: 500px;
+    }
+}
+@media (max-width:900px) {
+    .left{
+        margin-top: 2rem;
+    }
+    .right{
+        display: none;
+    }
+}
+@media (max-width:700px) {
+    .pattrenWrapper{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .line{
+        display: none;
+    }
+}
